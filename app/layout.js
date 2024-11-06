@@ -1,5 +1,9 @@
+"use client";
+
 import './globals.css';
 import { useState } from 'react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa'; // Importing GitHub and LinkedIn icons
+import { HiMenu, HiX } from 'react-icons/hi'; // Importing Menu and Close icons
 
 export const metadata = {
   title: 'My Portfolio',
@@ -20,19 +24,7 @@ export default function Layout({ children }) {
           <div className="flex justify-between items-center">
             <h1 className="text-2xl font-bold">My Portfolio</h1>
             <button className="md:hidden" onClick={toggleMenu}>
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                {isOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
-                )}
-              </svg>
+              {isOpen ? <HiX className="w-6 h-6" /> : <HiMenu className="w-6 h-6" />}
             </button>
           </div>
           <nav className={`mt-2 ${isOpen ? 'block' : 'hidden'} md:block`}>
@@ -57,8 +49,12 @@ export default function Layout({ children }) {
         <footer className="bg-gray-800 text-white p-4 text-center">
           <p>© {new Date().getFullYear()} My Portfolio</p>
           <div className="mt-2">
-            <a href="https://github.com/yourusername" className="mr-4 hover:text-gray-400">GitHub</a>
-            <a href="https://linkedin.com/in/yourusername" className="hover:text-gray-400">LinkedIn</a>
+            <a href="https://github.com/yourusername" className="mr-4 hover:text-gray-400">
+              <FaGithub className="inline-block w-5 h-5" />
+            </a>
+            <a href="https://linkedin.com/in/yourusername" className="hover:text-gray-400">
+              <FaLinkedin className="inline-block w-5 h-5" />
+            </a>
           </div>
         </footer>
       </body>
