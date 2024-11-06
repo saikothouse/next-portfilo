@@ -30,7 +30,7 @@ export default function About() {
       <h2 className="text-3xl font-bold mb-4">About Me</h2>
       <div className="flex items-center mb-6">
         <Image
-          src="/path/to/your/profile-picture.jpg" // Replace with your actual image path
+          src="/profile.jpg" // Replace with your actual image path
           alt="Profile Picture"
           width={100}
           height={100}
