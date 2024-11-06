@@ -5,11 +5,6 @@ import { useState } from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa'; // Importing GitHub and LinkedIn icons
 import { HiMenu, HiX } from 'react-icons/hi'; // Importing Menu and Close icons
 
-export const metadata = {
-  title: 'My Portfolio',
-  description: 'Showcasing my projects and skills',
-};
-
 export default function Layout({ children }) {
   const [isOpen, setIsOpen] = useState(false);
 
