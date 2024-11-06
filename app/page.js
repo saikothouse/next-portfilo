@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { SiJavascript, SiReact, SiNextdotjs, SiTailwindcss, SiNodedotjs } from "react-icons/si"; // Importing skill icons
+import { FaQuoteLeft } from "react-icons/fa"; // Importing a quote icon for testimonials
 
 export default function Home() {
   return (
@@ -18,11 +20,21 @@ export default function Home() {
       <section className="mb-8">
         <h3 className="text-2xl font-semibold">Skills</h3>
         <ul className="mt-4 space-y-2">
-          <li className="bg-gray-200 inline-block px-4 py-2 rounded-full">JavaScript</li>
-          <li className="bg-gray-200 inline-block px-4 py-2 rounded-full">React</li>
-          <li className="bg-gray-200 inline-block px-4 py-2 rounded-full">Next.js</li>
-          <li className="bg-gray-200 inline-block px-4 py-2 rounded-full">Tailwind CSS</li>
-          <li className="bg-gray-200 inline-block px-4 py-2 rounded-full">Node.js</li>
+          <li className="bg-gray-200 inline-flex items-center px-4 py-2 rounded-full">
+            <SiJavascript className="mr-2" /> JavaScript
+          </li>
+          <li className="bg-gray-200 inline-flex items-center px-4 py-2 rounded-full">
+            <SiReact className="mr-2" /> React
+          </li>
+          <li className="bg-gray-200 inline-flex items-center px-4 py-2 rounded-full">
+            <SiNextdotjs className="mr-2" /> Next.js
+          </li>
+          <li className="bg-gray-200 inline-flex items-center px-4 py-2 rounded-full">
+            <SiTailwindcss className="mr-2" /> Tailwind CSS
+          </li>
+          <li className="bg-gray-200 inline-flex items-center px-4 py-2 rounded-full">
+            <SiNodedotjs className="mr-2" /> Node.js
+          </li>
         </ul>
       </section>
 
@@ -39,7 +51,8 @@ export default function Home() {
       {/* Testimonials Section */}
       <section className="mt-8 p-4 bg-gray-100 rounded-lg">
         <h3 className="text-xl font-semibold">What People Say</h3>
-        <blockquote className="mt-2 italic">
+        <blockquote className="mt-2 italic flex items-center">
+          <FaQuoteLeft className="mr-2 text-gray-600" />
           "Your work is outstanding! You have a great eye for design and functionality."
         </blockquote>
         <p className="mt-1 text-sm text-gray-600">— Happy Client</p>
