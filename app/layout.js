@@ -1,3 +1,5 @@
+"use client"; // Marking this component as a Client Component
+
 import './globals.css';
 import { useState } from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa'; // Importing GitHub and LinkedIn icons
@@ -33,15 +35,6 @@ export default function Layout({ children }) {
           </nav>
         </header>
         
-        {/* Hero Section */}
-        <section className="bg-gray-200 p-6 text-center">
-          <h2 className="text-3xl font-bold mb-2">Welcome to My Portfolio</h2>
-          <p className="text-lg">I'm [Your Name], a passionate Next.js Developer.</p>
-          <div className="mt-4">
-            <a href="/projects" className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">View My Projects</a>
-          </div>
-        </section>
-
         <main className="p-4">{children}</main>
 
         <footer className="bg-gray-800 text-white p-4 text-center">
