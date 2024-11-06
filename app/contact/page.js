@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from 'react';
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'; // Importing icons
 
 export default function Contact() {
