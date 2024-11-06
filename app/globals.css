@@ -31,3 +31,38 @@ body {
     text-wrap: balance;
   }
 }
+/* Custom global styles */
+html {
+  scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+body {
+  font-family: 'Inter', sans-serif; /* Example custom font */
+  line-height: 1.5; /* Improved line height for readability */
+  color: #333; /* Default text color */
+  background-color: #f9fafb; /* Light gray background */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif; /* Example custom font for headings */
+  margin: 0; /* Reset margin */
+}
+
+a {
+  color: #3b82f6; /* Tailwind blue for links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+ul {
+  padding-left: 1.25rem; /* Custom padding for unordered lists */
+}
+
+.container {
+  max-width: 1200px; /* Max width for main container */
+  margin: 0 auto; /* Center the container */
+  padding: 0 1rem; /* Padding for the container */
+}
