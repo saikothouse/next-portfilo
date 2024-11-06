@@ -1,5 +1,3 @@
-"use client";
-
 import './globals.css';
 import { useState } from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa'; // Importing GitHub and LinkedIn icons
